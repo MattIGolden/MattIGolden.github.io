@@ -1,0 +1,264 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+	font-family: "Prata";
+	src: url(../fonts/Prata-Regular.ttc);
+}
+@font-face {
+	font-family: "PTSans";
+	src: url(../fonts/PT_Sans-Web-Regular.ttf);
+}
+@font-face {
+	font-family: "PTSansBold";
+	src: url(../fonts/PT_Sans-Web-Bold.ttf);
+}
+
+
+
+body {
+    background-color: #FFC9CD;
+}
+*:focus {
+	outline: none;
+}
+.pop-up-box {
+	background-image: url(../graphics/linesdesktop.png);
+	background-repeat: no-repeat;
+    background-size: 450px;
+    background-position-x: 50px;
+	background-color: white;
+	width: 760px;
+	height: 500px;
+	margin: auto;
+	font-size: 100%;
+}
+.pop-up-box.inactive {
+	display: none;
+}
+.close {
+	cursor: pointer;
+	float: right;
+	padding-right: 30px;
+    font-weight: lighter;
+    font-size: 55px;
+    color: #E9E9E9;
+	background: transparent;
+	border: none;
+}
+.cta-info {
+	display: flex;
+}
+.cta-title  {
+	font-family: 'Prata';
+	font-size: 65px;
+	padding-left: 88px;
+	letter-spacing: 20px;
+	width: 252px;
+	white-space: normal;
+
+}
+.ampersand {
+	display: flex;
+	font-family: 'prata';
+	font-size: 65px;
+	color: #FD8C94;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+.percent-info {
+	display: flex;
+	margin-top: -320px;
+    float: right;
+    padding-right: 60px;
+}
+.discount {
+	font-family: 'prata';
+	font-size: 28px;
+	margin-top: auto;
+	margin-bottom: auto;
+	
+	
+}
+.discount-number {
+	font-family: 'prata';
+	font-size: 167px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+.discount-percent {
+	font-size: 82px;
+	
+}
+.inputs {
+	display: flex;
+	margin-top: -10px;
+    float: right;
+    padding-right: 83px;
+    margin-top: -100px;
+}
+.email-address {
+	font-family: 'PTSansBold';
+	color: black;
+	letter-spacing: 4px;
+	outline: 0;
+	border-width: 0 0 3px;
+	border-color: black;
+	width: 160px;
+	padding-bottom: 10px;
+	margin-right: 10px;
+}
+.email-address.invalid {
+	color: red;
+	border-color: red;
+}
+::placeholder {
+	color: black;
+}
+.button {
+	font-family: 'PTSansBold';
+	color: #FD8C94;
+	letter-spacing: 4px;
+	text-align: left;
+	background: transparent;
+	border-width: 0 0 3px;
+	border-color: #FD8C94;
+	padding-bottom: 10px;
+	width: 80px;
+	transition: 0.3s;
+}
+.button:hover {
+	color: rgb(219, 86, 94);
+	border-color: rgb(219, 86, 94);
+}
+.error-message {
+	display: none;
+}
+.page2 {
+	display: none;
+}
+.page2.active {
+	display: block;
+	background-color: white;
+	width: 760px;
+	height: 500px;
+	margin: auto;
+}
+
+.error-message.active {
+	display: block;
+	font-size: 12px;
+	font-family: 'PTSans';
+	color: red;
+}
+.valid-title {
+	width: 600px;
+	padding-top: 100px;
+}
+.flourish {
+	margin-top: -40px;
+	width: 200px;
+    padding-left: 88px;
+    padding-bottom: 30px;
+}
+.thank-you-message {
+	font-family: 'PTSans';
+	padding-left: 88px;
+	margin-top: -10px;
+	color: #464646;
+}
+a.button {
+	text-decoration: none;
+	border-bottom: solid 3px;
+	margin-left: 88px;
+}
+@media only screen and (max-width: 500px) {
+	
+	.pop-up-box {
+		width: 98%;
+		background-image: url(../graphics/linesmobile.png);
+		background-position-y: 250px;
+    	background-position-x: 29px;
+    	background-size: 320px;
+    	background-repeat: no-repeat;
+		height: 660px;
+	}
+	.cta-info {
+		display: block;
+	}
+	.cta-title {
+		font-size: 45px;
+		width: 95%;
+		padding-left: 50px;
+		padding-top: 70px;
+		letter-spacing: 10px;
+	}
+	
+	.ampersand {
+		padding-left: 44%;
+	}
+	.percent-info {
+		display: flex;
+		margin-top: -30px;
+		padding-right: 30px;
+		
+	}
+	.discount-number {
+		padding-left: 32px;
+		width: 223px;
+	}
+	.discount {
+		margin: 0;
+		padding-top: 30px;
+	}
+	.inputs {
+		display: block;
+		margin-top: -30px;
+		margin-left: 0;
+		width: 98%;
+   		padding-right: 4px;
+	}
+	.email-address {
+		width: 90%;
+		text-align: center;	
+		margin-left: 17px;
+
+
+	}
+	.button {
+		width: 90%;
+		height: 50px;
+		text-align: center;
+		padding-top: 7px;
+		margin-left: 17px;
+		margin-top: 40px;
+		border: solid 1px;
+	}
+	.error-message.active {
+		margin-top: -80px;
+    	padding-left: 112px;
+	}
+	.page2.active {
+		width: 98%;
+		height: 560px;
+	}
+	.valid-title {
+		width: 70%;
+	}
+	.flourish {
+		padding-left: 49px;
+	}
+	.thank-you-message {
+		width: 270px;
+		padding-left: 49px;
+		line-height: 30px;
+		margin-bottom: 40px;
+
+	}
+	a.button {
+		width: 90%;
+		text-align: center;
+		padding: 20px 90px;
+    	margin-left: 46px;
+		border: solid 1px;	}
+}
